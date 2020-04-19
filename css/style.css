@@ -25,18 +25,15 @@ header {
   background-position: 130% 100%;
   background-size: 1000px;
 }
-
 /** top **/
 header .top {
   height: 500px;
 }
-
 /* menu */
 header .top .menu {
   width: 100%;
   height: 70px;
 }
-
 header .top .menu ul li {
   display: inline-block;
   padding: 5px 15px;
@@ -47,9 +44,8 @@ header .top .menu ul li a {
   text-transform: uppercase;
   font-size: 10px;
 }
-
 header .top .menu div {
-  display: inline-block;
+
   height: 100%;
 }
 header .top .menu .logo {
@@ -65,41 +61,44 @@ header .top .menu .personal {
   float: right;
   padding: 20px 0;
 }
-header .top .menu .personal .login {
+header .top .menu .personal li:nth-last-child(2) {
   border: 1px solid white;
-  border-radius: 10%;
+  border-radius: 5%;
+  padding: 5px 30px;
 }
-header .top .menu .personal .piano {
-  background:lightgreen;
-  border: 1px solid lightgreen;
-  border-radius: 10%;
+header .top .menu .personal li:last-child {
+  background:limegreen;
+  border: 1px solid limegreen;
+  border-radius: 5%;
+  padding: 5px;
 }
-
 /* end menu */
 
 /* cta */
-
 header .top .cta {
   height: auto;
   width: auto;
-  margin-top: 50px; /* da modificare/ centrare dopo con altri valori. */
+  margin-top: 50px;
 }
 header .top .cta .top {
   color: white;
-  width: 35%;
+  width: 45%;
   height: 80%;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
-header .top .cta .button {
-  padding: 10px;
+header .top .cta .botton {
+  padding: 20px;
   color: white;
   text-transform: uppercase;
   border-radius: 5%;
-  background: lightgreen;
+  background: limegreen;
 }
-
+header .top .cta .botton a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 /* end cta */
-
 /** end top **/
 
 /** bottom **/
@@ -112,17 +111,19 @@ header .bottom .subtittle {
   color: grey;
 }
 /**end bottom **/
-
 /*** END HEADER ***/
 
 /*** MAIN ***/
-/** main top **/
-main {
 
+/** main general rulez **/
+main .col {
+  display: inline-block;
 }
+/** end mani general rulez **/
+
+/** main top **/
 main .top {
   height: 600px;
-
 }
 main .top .img {
   text-align: center;
@@ -134,103 +135,113 @@ main .top img {
 }
 main .top .tittle {
   width: 100%;
-  color: green;
+  color: limegreen;
 }
 main .top .content {
   width: 100%;
 }
 main .top div {
-
-
-  display: inline-block;
   width: 32.9%;
-
   padding: 15px;
   text-align: center;
 }
 main .top div hr {
   margin: 0 120px;
 }
-
-/* main top left */
 main .top .left {
 float: left;
 }
-
-main .top .center {
-
-}
-
 main .top .right {
   float: right;
-
 }
-/** end top **/
+/** end main top **/
 
-/** bottom **/
+/** main bottom **/
 main .bottom {
-  height: 400px;
+  height: 500px;
 }
 main .bottom div {
-  display: inline-block;
   width: 49%;
   height: 350px;
-
-
 }
 main .bottom .left img {
   height: 400px;
   width: 400px;
 }
 main .bottom .right {
-
   float: right;
   padding: 100px 100px 0px 10px;
-
 }
-
 main .bottom .right p {
   color: grey;
   margin: 20px 0px;
 }
-
-
-
-/** end bottom **/
-
+/** end main bottom **/
 /*** END MAIN***/
 
 /*** FOOTER ***/
+
+/** footer general rulez**/
 footer {
+  margin-top: 20px;
   background: lightgrey;
-  height: 200px;
+  height: 210px;
 }
-
-footer .container .left {
-  font-size: 25px;
+footer .tasto {
+  background: limegreen;
+  padding: 20px;
+  border-radius: 5%;
 }
-footer .container .center {
-  background: green;
-}
-footer .container .right {
-  float: right;
-
-
-}
-footer .container div {
-  margin-top: 50px;
-  width: 32.5%;
+footer .colm {
   display: inline-block;
 }
-footer .container .right .view p,
-footer .container .right .help p {
-  background: green;
-  border-radius: 5%;
+footer a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer .select {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 150px;
+}
+footer .container {
+  padding-top:80px;
+  height: 100%;
+}
+/** end footer general rulez**/
+
+/* footer container left */
+footer .container .left {
   padding: 20px;
+  float: left;
+  width: 45%;
+  height: 100%;
+  font-size: 25px;
+}
+/* end footer container left */
+
+/* footer container righ */
+footer .container .right {
+  float:right;
+  width: 45%;
+  height: 100%;
+}
+footer .container .right .sono {
+  font-size: 12px;
+  padding: 20px 0;
+  float: left;
+}
+footer .container .right .end {
+  float: right;
+}
+footer .container .right .end .view {
   margin-bottom: 10px;
 }
-
-
-
-
+footer .container .right .end .help {
+  width: 75px;
+  margin: auto;
+}
+/* end footer container righ */
 /*** END FOOTER***/
